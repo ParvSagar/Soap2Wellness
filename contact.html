@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Soap2wellness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>If you have any questions, want to collaborate, or simply want to learn more about our initiative, reach out to us below.</p>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p>Or email us directly at: <a href="mailto:soap2wellness@gmail.com">soap2wellness@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2024 Soap2Wellness | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("We will reach out to you soon. Thank you for contacting us!");
+        });
+    </script>
+</body>
+</html>
